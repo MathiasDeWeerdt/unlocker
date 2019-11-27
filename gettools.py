@@ -126,8 +126,9 @@ def main():
 	
 	lastVersion = parser.HTMLDATA[-1]
 	
-	urlpost15 = url + lastVersion + '/packages/com.vmware.fusion.tools.darwin.zip.tar'
-	urlpre15 = url + lastVersion + parser.HTMLDATA[-1] + '/packages/com.vmware.fusion.tools.darwinPre15.zip.tar'
+	# 11.1.0 Seems to be the latest version to contain the tools. 
+	urlpost15 = 'http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/11.1.0/13668589/packages/com.vmware.fusion.tools.darwin.zip.tar'
+	urlpre15 = 'http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/11.1.0/13668589/packages/com.vmware.fusion.tools.darwinPre15.zip.tar'
 	parser.clean()
 
 	# Download the darwin.iso tgz file
